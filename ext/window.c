@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-#include "ext/klass/state.h"
+#include "ext/klass/render_state.h"
 #include "ext/module/drawable/drawable.h"
 #include "ext/klass/drawable/circle.h"
 #include "ext/klass/target.h"
@@ -198,17 +198,17 @@ static VALUE Window_draw(int argc, VALUE *argv, VALUE self) {
     if (argc == 2) {
         VALUE rb_state = argv[1];
 
-        if (rb_obj_is_kind_of(rb_state, Get_Klass_State())) {
-            states = Get_State_Struct(rb_state);
+        if (rb_obj_is_kind_of(rb_state, Get_Klass_RenderState())) {
+            states = Get_RenderState_Struct(rb_state);
         } else {
-            raise_invalid_argument_class(Get_Klass_State());
+            raise_invalid_argument_class(Get_Klass_RenderState());
         }
     }
 
     if (rb_obj_is_kind_of(rb_drawable, Get_Klass_Circle())) {
         sfRenderWindow_drawCircleShape(window, Get_Circle_Struct(rb_drawable), states);
     } else {
-        rb_funcall(rb_drawable, rb_intern("draw"), 2, Get_New_Target(self), Get_New_State());
+        rb_funcall(rb_drawable, rb_intern("draw"), 2, Get_New_Target(self), Get_New_RenderState());
     }
 
     return self;

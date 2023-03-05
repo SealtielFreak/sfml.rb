@@ -4,7 +4,7 @@
 
 #include "ext/module/drawable/drawable.h"
 #include "ext/klass/target.h"
-#include "ext/klass/state.h"
+#include "ext/klass/render_state.h"
 #include "ext/exceptions.h"
 #include "ext/module/transform.h"
 #include "ext/klass/transformable.h"
@@ -146,12 +146,12 @@ static VALUE Circle_draw(VALUE self, VALUE rb_target, VALUE rb_state) {
         raise_invalid_argument_class(Get_Klass_Target());
     }
 
-    if (!rb_obj_is_kind_of(rb_target, Get_Klass_State())) {
-        raise_invalid_argument_class(Get_Klass_State());
+    if (!rb_obj_is_kind_of(rb_target, Get_Klass_RenderState())) {
+        raise_invalid_argument_class(Get_Klass_RenderState());
     }
 
     sfRenderWindow_drawCircleShape(((Target *) Get_Target_Struct(rb_target))->window, Get_Circle_Struct(self),
-                                   Get_State_Struct(rb_state));
+                                   Get_RenderState_Struct(rb_state));
     return Qnil;
 }
 

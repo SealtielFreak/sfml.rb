@@ -5,7 +5,7 @@
 
 #include "ext/module/transform.h"
 #include "ext/klass/transformable.h"
-#include "ext/klass/state.h"
+#include "ext/klass/render_state.h"
 #include "ext/klass/target.h"
 #include "ext/klass/window.h"
 #include <ext/exceptions.h>
@@ -21,7 +21,7 @@ static VALUE Drawable_draw(VALUE self, VALUE rb_target, VALUE rb_state) {
 
     }
 
-    if (!rb_obj_is_kind_of(rb_state, Get_Klass_State())) {
+    if (!rb_obj_is_kind_of(rb_state, Get_Klass_RenderState())) {
 
     }
 

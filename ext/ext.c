@@ -8,7 +8,7 @@
 #include "ext/klass/transformable.h"
 #include <ext/klass/clock.h>
 #include <ext/klass/target.h>
-#include "ext/klass/state.h"
+#include "ext/klass/render_state.h"
 #include "ext/klass/event.h"
 #include "ext/klass/window.h"
 #include "ext/klass/view.h"
@@ -38,7 +38,7 @@ void Init_ext(void) {
     Init_Transformable(rb_mExt);
     Init_Clock(rb_mExt);
     Init_Target(rb_mExt);
-    Init_State(rb_mExt);
+    Init_RenderState(rb_mExt);
     Init_Circle(rb_mExt);
     Init_Event(rb_mExt);
     Init_VideoMode(rb_mExt);

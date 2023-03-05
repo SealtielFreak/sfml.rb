@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ext/klass/drawable/circle.h>
-#include <ext/klass/state.h>
+#include <ext/klass/render_state.h>
 
 #include "ext/module/transform.h"
 #include "ext/klass/transformable.h"
@@ -53,7 +53,7 @@ static VALUE RenderTarget_draw(VALUE self, VALUE rb_drawable, VALUE rb_state) {
     Target *target = Get_Target_Struct(self);
 
     if (rb_obj_is_kind_of(rb_drawable, Get_Klass_Circle())) {
-        sfRenderWindow_drawCircleShape(target->window, Get_Circle_Struct(rb_drawable), Get_State_Struct(rb_state));
+        sfRenderWindow_drawCircleShape(target->window, Get_Circle_Struct(rb_drawable), Get_RenderState_Struct(rb_state));
     } else {
         rb_funcall(rb_drawable, rb_intern("draw"), 2, self, rb_state);
     }
