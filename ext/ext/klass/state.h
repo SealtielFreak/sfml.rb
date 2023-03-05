@@ -1,5 +1,5 @@
-#ifndef CANDY2D_EXT_STATE_H
-#define CANDY2D_EXT_STATE_H
+#ifndef SFML_RB_STATE_H
+#define SFML_RB_STATE_H
 
 #include <ruby.h>
 
@@ -13,4 +13,4 @@ VALUE Get_Klass_State(void);
 
 VALUE Get_New_State(void);
 
-#endif //CANDY2D_EXT_STATE_H
+#endif //SFML_RB_STATE_H

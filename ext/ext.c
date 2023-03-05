@@ -3,7 +3,7 @@
 
 #include "ext/module.h"
 #include "ext/module/transform.h"
-#include <ext/module/drawable/drawable.h>
+#include "ext/module/drawable/drawable.h"
 #include "ext/klass/color.h"
 #include "ext/klass/transformable.h"
 #include <ext/klass/clock.h>
@@ -11,9 +11,10 @@
 #include "ext/klass/state.h"
 #include "ext/klass/event.h"
 #include "ext/klass/display.h"
-#include <ext/klass/view.h>
+#include "ext/klass/view.h"
 #include "ext/klass/mode.h"
-#include <ext/klass/drawable/circle.h>
+#include "ext/klass/drawable/circle.h"
+
 
 //  C Naming Convention:
 //
@@ -30,7 +31,7 @@
 //    Global variables    g_lowerCase or g_lower_case (searchable by g_ prefix)
 
 void Init_ext(void) {
-    rb_mExt = rb_define_module("Ext");
+    rb_mExt = rb_define_module("SFML");
 
     Init_Drawable(rb_mExt);
     Init_Transform(rb_mExt);

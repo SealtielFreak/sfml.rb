@@ -1,5 +1,5 @@
-#ifndef CANDY2D_EXT_CLOCK_H
-#define CANDY2D_EXT_CLOCK_H
+#ifndef SFML_RB_CLOCK_H
+#define SFML_RB_CLOCK_H
 
 #include <ruby.h>
 
@@ -9,4 +9,4 @@ void *Get_Clock_Struct(VALUE self);
 
 VALUE Get_Klass_Clock();
 
-#endif //CANDY2D_EXT_CLOCK_H
+#endif //SFML_RB_CLOCK_H

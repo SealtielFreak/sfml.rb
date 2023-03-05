@@ -1,5 +1,5 @@
-#ifndef CANDY2D_EXT_EVENT_H
-#define CANDY2D_EXT_EVENT_H
+#ifndef SFML_RB_EVENT_H
+#define SFML_RB_EVENT_H
 
 #include <ruby.h>
 
@@ -9,4 +9,4 @@ void *Get_Event_Struct(VALUE self);
 
 VALUE Get_Klass_Event();
 
-#endif //CANDY2D_EXT_EVENT_H
+#endif //SFML_RB_EVENT_H

@@ -1,5 +1,5 @@
-#ifndef CANDY2D_EXT_DISPLAY_H
-#define CANDY2D_EXT_DISPLAY_H
+#ifndef SFML_RB_DISPLAY_H
+#define SFML_RB_DISPLAY_H
 
 #include <ruby.h>
 
@@ -9,4 +9,4 @@ void *Get_Display_Struct(VALUE self);
 
 VALUE Get_Klass_Display();
 
-#endif //CANDY2D_EXT_DISPLAY_H
+#endif //SFML_RB_DISPLAY_H

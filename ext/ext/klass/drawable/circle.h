@@ -1,5 +1,5 @@
-#ifndef CANDY2D_EXT_CIRCLE_H
-#define CANDY2D_EXT_CIRCLE_H
+#ifndef SFML_RB_CIRCLE_H
+#define SFML_RB_CIRCLE_H
 
 #include <ruby.h>
 
@@ -9,4 +9,4 @@ void *Get_Circle_Struct(VALUE self);
 
 VALUE Get_Klass_Circle();
 
-#endif //CANDY2D_EXT_CIRCLE_H
+#endif //SFML_RB_CIRCLE_H

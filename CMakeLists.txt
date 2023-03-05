@@ -1,10 +1,11 @@
 cmake_minimum_required(VERSION 3.20)
-project(candy2d_ext C)
+project(sfml_rb C)
 
 set(CMAKE_C_STANDARD 11)
 
 include_directories(include)
 include_directories(include/ruby)
+include_directories(include/SFML)
 
 include_directories(ext)
 

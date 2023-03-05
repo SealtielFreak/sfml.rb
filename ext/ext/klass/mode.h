@@ -1,5 +1,5 @@
-#ifndef CANDY2D_EXT_MODE_H
-#define CANDY2D_EXT_MODE_H
+#ifndef SFML_RB_MODE_H
+#define SFML_RB_MODE_H
 
 #include <ruby.h>
 
@@ -9,4 +9,4 @@ void *Get_Mode_Struct(VALUE self);
 
 VALUE Get_Klass_Mode();
 
-#endif //CANDY2D_EXT_MODE_H
+#endif //SFML_RB_MODE_H

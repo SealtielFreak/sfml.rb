@@ -68,7 +68,7 @@ static VALUE Window_clear(int argc, VALUE *argv, VALUE self) {
     sfColor color = sfBlack;
     VALUE rb_color;
 
-    if(argc != 3 && argc != 0) {
+    if (argc != 3 && argc != 0) {
         raise_invalid_arguments_excepted(argc, 3);
     }
 

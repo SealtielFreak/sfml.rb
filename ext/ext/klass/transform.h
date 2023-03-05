@@ -1,5 +1,5 @@
-#ifndef CANDY2D_EXT_TRANSFORM_H
-#define CANDY2D_EXT_TRANSFORM_H
+#ifndef SFML_RB_TRANSFORM_H
+#define SFML_RB_TRANSFORM_H
 
 #include <ruby.h>
 
@@ -14,4 +14,4 @@ void *Get_Transform_Struct(VALUE self);
 
 VALUE To_Transform_Struct(void *ptr);
 
-#endif //CANDY2D_EXT_TRANSFORM_H
+#endif //SFML_RB_TRANSFORM_H

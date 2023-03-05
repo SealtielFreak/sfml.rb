@@ -17,7 +17,7 @@ void raise_invalid_argument_class(VALUE rb_cKlass) {
 void raise_invalid_arguments_excepted(int expected, size_t given) {
     char msg[MSG_LENGTH];
 
-    if(expected > 0) {
+    if (expected > 0) {
         sprintf(msg, "wrong number of arguments (given %ul, expected %i)", given, expected);
     } else {
         sprintf(msg, "wrong number of arguments (given %ul)", given);
@@ -36,7 +36,7 @@ void raise_invalid_array_length(size_t length) {
 }
 
 void raise_method_no_implemented(const char *method) {
-    if(strlen(method) == 0) {
+    if (strlen(method) == 0) {
         rb_raise(rb_eArgError, "%s", "method no implemented");
     } else {
 
