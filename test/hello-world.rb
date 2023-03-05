@@ -69,7 +69,7 @@ while window.is_open?
   view = View.new
 
   current += 1
-
+  
   window.clear color
   
   circles.each { |c| window.draw c }
