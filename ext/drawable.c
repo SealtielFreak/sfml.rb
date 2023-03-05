@@ -7,7 +7,7 @@
 #include "ext/klass/transformable.h"
 #include "ext/klass/state.h"
 #include "ext/klass/target.h"
-#include "ext/klass/display.h"
+#include "ext/klass/window.h"
 #include <ext/exceptions.h>
 #include "ext/vec2.h"
 #include "ext/rect.h"

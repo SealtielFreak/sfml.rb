@@ -10,9 +10,9 @@
 #include <ext/klass/target.h>
 #include "ext/klass/state.h"
 #include "ext/klass/event.h"
-#include "ext/klass/display.h"
+#include "ext/klass/window.h"
 #include "ext/klass/view.h"
-#include "ext/klass/mode.h"
+#include "ext/klass/video_mode.h"
 #include "ext/klass/drawable/circle.h"
 
 
@@ -41,7 +41,7 @@ void Init_ext(void) {
     Init_State(rb_mExt);
     Init_Circle(rb_mExt);
     Init_Event(rb_mExt);
-    Init_Mode(rb_mExt);
+    Init_VideoMode(rb_mExt);
     Init_View(rb_mExt);
-    Init_Display(rb_mExt);
+    Init_Window(rb_mExt);
 }
