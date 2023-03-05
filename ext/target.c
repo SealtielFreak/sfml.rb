@@ -3,12 +3,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ext/klass/drawable/circle.h>
-#include <ext/klass/state.h>
+#include <ext/klass/render_state.h>
 
 #include "ext/module/transform.h"
 #include "ext/klass/transformable.h"
 #include "ext/klass/View.h"
-#include "ext/klass/display.h"
+#include "ext/klass/window.h"
 #include "ext/vec2.h"
 #include "ext/rect.h"
 #include "ext/module.h"
@@ -32,11 +32,11 @@ static VALUE RenderTarget_new(VALUE klass, VALUE rb_window) {
     VALUE self;
     Target *target;
 
-    if (!rb_obj_is_kind_of(rb_window, Get_Klass_Display())) {
+    if (!rb_obj_is_kind_of(rb_window, Get_Klass_Window())) {
         rb_raise(rb_eArgError, "Expected a Window object");
     }
 
-    target = RenderTarget_create(Get_Display_Struct(rb_window));
+    target = RenderTarget_create(Get_Window_Struct(rb_window));
     self = Data_Wrap_Struct(klass, 0, RenderTarget_free, target);
 
     VALUE argv[1] = {rb_window};
@@ -53,7 +53,7 @@ static VALUE RenderTarget_draw(VALUE self, VALUE rb_drawable, VALUE rb_state) {
     Target *target = Get_Target_Struct(self);
 
     if (rb_obj_is_kind_of(rb_drawable, Get_Klass_Circle())) {
-        sfRenderWindow_drawCircleShape(target->window, Get_Circle_Struct(rb_drawable), Get_State_Struct(rb_state));
+        sfRenderWindow_drawCircleShape(target->window, Get_Circle_Struct(rb_drawable), Get_RenderState_Struct(rb_state));
     } else {
         rb_funcall(rb_drawable, rb_intern("draw"), 2, self, rb_state);
     }

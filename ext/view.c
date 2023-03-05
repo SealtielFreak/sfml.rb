@@ -65,7 +65,7 @@ static VALUE View_set_rotation(VALUE self, VALUE rb_rotation) {
 
 
 static VALUE View_set_size(VALUE self, VALUE rb_scale) {
-    sfView_setSize(Get_View_Struct(self),  vec2f_new_from_ruby(rb_scale));
+    sfView_setSize(Get_View_Struct(self), vec2f_new_from_ruby(rb_scale));
     return self;
 }
 

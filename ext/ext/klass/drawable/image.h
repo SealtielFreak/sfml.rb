@@ -1,8 +1,4 @@
-//
-// Created by Sealtiel on 03/06/2022.
-//
+#ifndef SFML_RB_IMAGE_H
+#define SFML_RB_IMAGE_H
 
-#ifndef CANDY2D_EXT_IMAGE_H
-#define CANDY2D_EXT_IMAGE_H
-
-#endif //CANDY2D_EXT_IMAGE_H
+#endif //SFML_RB_IMAGE_H

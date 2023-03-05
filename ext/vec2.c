@@ -23,7 +23,7 @@ void vec2_check(VALUE rb_arr) {
 }
 
 VALUE vec2f_new_from_c(sfVector2f c_vec) {
-    return  VEC2_C2RB(c_vec);
+    return VEC2_C2RB(c_vec);
 }
 
 sfVector2i vec2i_new_from_ruby(VALUE rb_arr) {

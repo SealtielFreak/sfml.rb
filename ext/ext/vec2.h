@@ -1,5 +1,5 @@
-#ifndef CANDY2D_EXT_VEC2_H
-#define CANDY2D_EXT_VEC2_H
+#ifndef SFML_RB_VEC2_H
+#define SFML_RB_VEC2_H
 
 #include <ruby.h>
 
@@ -35,4 +35,4 @@ sfVector2u vec2u_new_from_ruby(VALUE rb_arr);
 
 sfVector2f vec2f_new_from_ruby(VALUE rb_arr);
 
-#endif //CANDY2D_EXT_VEC2_H
+#endif //SFML_RB_VEC2_H

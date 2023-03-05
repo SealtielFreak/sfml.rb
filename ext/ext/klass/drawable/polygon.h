@@ -1,8 +1,4 @@
-//
-// Created by Sealtiel on 03/06/2022.
-//
+#ifndef SFML_RB_POLYGON_H
+#define SFML_RB_POLYGON_H
 
-#ifndef CANDY2D_EXT_POLYGON_H
-#define CANDY2D_EXT_POLYGON_H
-
-#endif //CANDY2D_EXT_POLYGON_H
+#endif //SFML_RB_POLYGON_H

@@ -5,7 +5,7 @@
 
 #include "ext/klass/event/event_name.h"
 #include "ext/klass/keyboard.h"
-#include "ext/klass/mode.h"
+#include "ext/klass/video_mode.h"
 #include "ext/vec2.h"
 #include "ext/module.h"
 #include "ext/sfml.h"

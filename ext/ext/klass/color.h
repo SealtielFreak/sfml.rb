@@ -1,5 +1,5 @@
-#ifndef CANDY2D_EXT_COLOR_H
-#define CANDY2D_EXT_COLOR_H
+#ifndef SFML_RB_COLOR_H
+#define SFML_RB_COLOR_H
 
 #include <ruby.h>
 
@@ -23,4 +23,4 @@ sfColor color_new_from_rb(VALUE rb_arr);
 
 VALUE color_new_from_c(sfColor color);
 
-#endif //CANDY2D_EXT_COLOR_H
+#endif //SFML_RB_COLOR_H

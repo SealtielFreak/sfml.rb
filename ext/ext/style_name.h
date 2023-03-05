@@ -1,5 +1,5 @@
-#ifndef CANDY2D_EXT_STYLE_NAME_H
-#define CANDY2D_EXT_STYLE_NAME_H
+#ifndef SFML_RB_STYLE_NAME_H
+#define SFML_RB_STYLE_NAME_H
 
 #include <stdio.h>
 #include <string.h>
@@ -8,4 +8,4 @@
 
 int search_style_name(const char *style);
 
-#endif //CANDY2D_EXT_STYLE_NAME_H
+#endif //SFML_RB_STYLE_NAME_H

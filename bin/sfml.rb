@@ -1,0 +1,1 @@
+compile = "ocra --no-lzma --windows hello-world.rb --dll ruby_builtin_dlls\libgmp-10.dll --dll ruby_builtin_dlls\libssp-0.dll"

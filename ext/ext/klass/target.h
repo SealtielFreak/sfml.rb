@@ -1,5 +1,5 @@
-#ifndef CANDY2D_EXT_TARGET_H
-#define CANDY2D_EXT_TARGET_H
+#ifndef SFML_RB_TARGET_H
+#define SFML_RB_TARGET_H
 
 #include <ruby.h>
 
@@ -15,4 +15,4 @@ void *Get_Target_Struct(VALUE self);
 
 VALUE Get_New_Target(VALUE rb_window);
 
-#endif //CANDY2D_EXT_TARGET_H
+#endif //SFML_RB_TARGET_H

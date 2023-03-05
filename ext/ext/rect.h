@@ -1,5 +1,5 @@
-#ifndef CANDY2D_EXT_RECT_H
-#define CANDY2D_EXT_QUAD_H
+#ifndef SFML_RB_EXT_RECT_H
+#define SFML_RB_EXT_RECT_H
 
 #include <ruby.h>
 
@@ -13,4 +13,4 @@ VALUE Rect_new(float width, float height, float top, float bottom);
 
 void Rect_check(VALUE rb_arr);
 
-#endif //CANDY2D_EXT_RECT_H
+#endif //SFML_RB_EXT_RECT_H

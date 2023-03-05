@@ -1,5 +1,5 @@
-#ifndef CANDY2D_EXT_TRANSFORMABLE_H
-#define CANDY2D_EXT_TRANSFORMABLE_H
+#ifndef SFML_RB_TRANSFORMABLE_H
+#define SFML_RB_TRANSFORMABLE_H
 
 #include <ruby.h>
 
@@ -10,4 +10,4 @@ void *Get_Transformable_Struct(VALUE self);
 
 VALUE Get_Klass_Transformable();
 
-#endif //CANDY2D_EXT_TRANSFORMABLE_H
+#endif //SFML_RB_TRANSFORMABLE_H
