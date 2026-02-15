@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
     s.email       = 'SealtielFreak@yandex.com'
     s.license     = 'LGPL-2.1'
 
-    s.required_ruby_version = '>= 2.5.0'
+    s.required_ruby_version = '>= 3.3.0'
 
     s.files       = Dir.glob('ext/**/*.{h,c,rb,sh}') +
                     Dir.glob('lib/**/*.{rb}') +

@@ -3,7 +3,7 @@ project(sfml_rb C)
 
 set(CMAKE_C_STANDARD 11)
 
-find_package(Ruby 2.7 REQUIRED)
+find_package(Ruby 3.3.0 REQUIRED)
 find_package(CSFML 3.0.0 REQUIRED COMPONENTS graphics window system)
 
 add_library(sfml_rb SHARED
