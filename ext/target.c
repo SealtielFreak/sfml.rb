@@ -7,7 +7,7 @@
 
 #include "ext/module/transform.h"
 #include "ext/klass/transformable.h"
-#include "ext/klass/View.h"
+#include "ext/klass/view.h"
 #include "ext/klass/window.h"
 #include "ext/vec2.h"
 #include "ext/rect.h"

@@ -75,7 +75,7 @@ while window.is_open?
   circles.each { |c| window.draw c }
 
   view.zoom 0.5 
-  window.view = view 
+  window.view = view
   window.draw test
   
   window.view = window.default_view

@@ -14,7 +14,7 @@ static const char *events[LENGTH_EVENTS] = {
         "touch-moved", "touch-ended", "sensor-changed", "count"
 };
 
-const char *get_event_name(size_t name) {
+const char *get_event_name(unsigned long long int name) {
     if (name < LENGTH_EVENTS) {
         return events[name];
     }
