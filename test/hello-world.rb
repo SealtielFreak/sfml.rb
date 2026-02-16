@@ -55,7 +55,6 @@ while window.is_open?
     when 'key-pressed'
       puts "Key pressed: #{event.key}"
     end
-
   end
 
   puts window.position.to_s
@@ -69,12 +68,12 @@ while window.is_open?
   view = View.new
 
   current += 1
-  
+
   window.clear color
   
   circles.each { |c| window.draw c }
 
-  view.zoom 0.5 
+  view.zoom 0.5
   window.view = view
   window.draw test
   

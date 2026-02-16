@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
     
     s.authors     = ['Sealtiel Valderrama']
     s.email       = 'SealtielFreak@yandex.com'
-    s.license     = 'LGPL-2.1'
+    s.license     = 'LGPL-3.0-or-later'
 
     s.required_ruby_version = '>= 3.3.0'
 
