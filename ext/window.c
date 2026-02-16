@@ -68,8 +68,8 @@ static VALUE Window_clear(int argc, VALUE *argv, VALUE self) {
     sfColor color = sfBlack;
     VALUE rb_color;
 
-    if (argc != 3 && argc != 0) {
-        raise_invalid_arguments_excepted(argc, 3);
+    if (argc > 3 || argc == 0) {
+        raise_invalid_arguments_excepted(3, argc);
     }
 
     if (argc == 3) {
@@ -259,15 +259,15 @@ void Init_Window(VALUE rb_module) {
     rb_define_method(rb_cWindow, "key_repeat_enabled=", Window_set_key_repeat_enabled, 1);
     rb_define_method(rb_cWindow, "joystick_threshold=", Window_set_joystick_threshold, 1);
     rb_define_method(rb_cWindow, "position=", Window_set_position, 1);
-    //rb_define_method(rb_cWindow, "view=", Window_set_view, 1);
+    rb_define_method(rb_cWindow, "view=", Window_set_view, 1);
 
     // getters
     rb_define_method(rb_cWindow, "request_focus", Window_request_focus, 0);
     rb_define_method(rb_cWindow, "focus?", Window_has_focus, 0);
     rb_define_method(rb_cWindow, "draw", Window_draw, -1);
     rb_define_method(rb_cWindow, "position", Window_get_position, 0);
-    //rb_define_method(rb_cWindow, "view", Window_get_view, 0);
-    //rb_define_method(rb_cWindow, "default_view", Window_get_default_view, 0);
+    rb_define_method(rb_cWindow, "view", Window_get_view, 0);
+    rb_define_method(rb_cWindow, "default_view", Window_get_default_view, 0);
 }
 
 void *Get_Window_Struct(VALUE self) {
