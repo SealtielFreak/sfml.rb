@@ -32,7 +32,7 @@ end
 check_sfml3_code = <<-C
   #include <SFML/Config.h>
   #if !defined(SFML_VERSION_MAJOR) || SFML_VERSION_MAJOR < 3
-  #error "No es SFML 3"
+  #error "You need SFML 3"
   #endif
   int main() { return 0; }
 C
