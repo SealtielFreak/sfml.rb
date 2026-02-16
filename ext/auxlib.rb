@@ -1,4 +1,12 @@
-require 'mkmf-rice'
+require 'mkmf'
+
+CHECK_SFML3_CODE = <<-C
+  #include <SFML/Config.h>
+  #if !defined(SFML_VERSION_MAJOR) || SFML_VERSION_MAJOR < 3
+  #error "No es SFML 3"
+  #endif
+  int main() { return 0; }
+C
 
 module System
   def System.name!
